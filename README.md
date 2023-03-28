@@ -21,3 +21,6 @@ End-to-End Train Machine Learning Model:
 4. Train the Model
 5. Integrate the Model
 6. Monitor the Model
+
+## Azure Machine Learning
+Product Azure --> UI possible to manage ML Lifecycle full control train model and manage. Develop model using Python.
