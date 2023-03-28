@@ -14,3 +14,10 @@ Common ML Tasks:
 4. Natural Language Processing (NLP)
 5. Computer Vision
 
+End-to-End Train Machine Learning Model:
+1. Define the Problem
+2. Get the Data
+3. Prepare the Data
+4. Train the Model
+5. Integrate the Model
+6. Monitor the Model
