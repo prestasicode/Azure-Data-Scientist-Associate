@@ -1,0 +1,86 @@
+Metric	Description	Calculation
+AUC	AUC is the Area under the Receiver Operating Characteristic Curve.
+
+Objective: Closer to 1 the better
+Range: [0, 1]
+
+Supported metric names include,
+AUC_macro, the arithmetic mean of the AUC for each class.
+AUC_micro, computed by counting the total true positives, false negatives, and false positives.
+AUC_weighted, arithmetic mean of the score for each class, weighted by the number of true instances in each class.
+AUC_binary, the value of AUC by treating one specific class as true class and combine all other classes as false class.
+
+Calculation
+accuracy	Accuracy is the ratio of predictions that exactly match the true class labels.
+
+Objective: Closer to 1 the better
+Range: [0, 1]	Calculation
+average_precision	Average precision summarizes a precision-recall curve as the weighted mean of precisions achieved at each threshold, with the increase in recall from the previous threshold used as the weight.
+
+Objective: Closer to 1 the better
+Range: [0, 1]
+
+Supported metric names include,
+average_precision_score_macro, the arithmetic mean of the average precision score of each class.
+average_precision_score_micro, computed by counting the total true positives, false negatives, and false positives.
+average_precision_score_weighted, the arithmetic mean of the average precision score for each class, weighted by the number of true instances in each class.
+average_precision_score_binary, the value of average precision by treating one specific class as true class and combine all other classes as false class.
+Calculation
+balanced_accuracy	Balanced accuracy is the arithmetic mean of recall for each class.
+
+Objective: Closer to 1 the better
+Range: [0, 1]	Calculation
+f1_score	F1 score is the harmonic mean of precision and recall. It is a good balanced measure of both false positives and false negatives. However, it does not take true negatives into account.
+
+Objective: Closer to 1 the better
+Range: [0, 1]
+
+Supported metric names include,
+f1_score_macro: the arithmetic mean of F1 score for each class.
+f1_score_micro: computed by counting the total true positives, false negatives, and false positives.
+f1_score_weighted: weighted mean by class frequency of F1 score for each class.
+f1_score_binary, the value of f1 by treating one specific class as true class and combine all other classes as false class.
+Calculation
+log_loss	This is the loss function used in (multinomial) logistic regression and extensions of it such as neural networks, defined as the negative log-likelihood of the true labels given a probabilistic classifier's predictions.
+
+Objective: Closer to 0 the better
+Range: [0, inf)	Calculation
+norm_macro_recall	Normalized macro recall is recall macro-averaged and normalized, so that random performance has a score of 0, and perfect performance has a score of 1.
+
+Objective: Closer to 1 the better
+Range: [0, 1]	(recall_score_macro - R) / (1 - R)
+
+where, R is the expected value of recall_score_macro for random predictions.
+
+R = 0.5 for  binary classification.
+R = (1 / C) for C-class classification problems.
+matthews_correlation	Matthews correlation coefficient is a balanced measure of accuracy, which can be used even if one class has many more samples than another. A coefficient of 1 indicates perfect prediction, 0 random prediction, and -1 inverse prediction.
+
+Objective: Closer to 1 the better
+Range: [-1, 1]	Calculation
+precision	Precision is the ability of a model to avoid labeling negative samples as positive.
+
+Objective: Closer to 1 the better
+Range: [0, 1]
+
+Supported metric names include,
+precision_score_macro, the arithmetic mean of precision for each class.
+precision_score_micro, computed globally by counting the total true positives and false positives.
+precision_score_weighted, the arithmetic mean of precision for each class, weighted by number of true instances in each class.
+precision_score_binary, the value of precision by treating one specific class as true class and combine all other classes as false class.
+Calculation
+recall	Recall is the ability of a model to detect all positive samples.
+
+Objective: Closer to 1 the better
+Range: [0, 1]
+
+Supported metric names include,
+recall_score_macro: the arithmetic mean of recall for each class.
+recall_score_micro: computed globally by counting the total true positives, false negatives and false positives.
+recall_score_weighted: the arithmetic mean of recall for each class, weighted by number of true instances in each class.
+recall_score_binary, the value of recall by treating one specific class as true class and combine all other classes as false class.
+Calculation
+weighted_accuracy	Weighted accuracy is accuracy where each sample is weighted by the total number of samples belonging to the same class.
+
+Objective: Closer to 1 the better
+Range: [0, 1]	Calculation
