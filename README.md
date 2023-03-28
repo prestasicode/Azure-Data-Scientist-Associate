@@ -23,4 +23,23 @@ End-to-End Train Machine Learning Model:
 6. Monitor the Model
 
 ## Azure Machine Learning
-Product Azure --> UI possible to manage ML Lifecycle full control train model and manage. Develop model using Python.
+Azure Service --> UI possible to manage ML Lifecycle full control train model and manage. Develop model using Python.
+
+## Memory Optimized CPU/Single GPU
+Azure Machine Learning Workspace --> Large tabular dataset to train and validate model ML in AZ ML Notebooks --> GPU 
+CPU for smaller tabular datasets
+2 Types VM Sizes:
+1. General Purpose
+2. Memory Optimized : High memory of CPU, fit to larger dataset and work with notebook
+
+## Azure Cognitive Services
+Train set of images and Integrate model as an API. Minimize effort.
+
+## Azure Machine Learning Designer
+One of Feature in Azure ML Notebook that facilitate user for drag and drop interface with pre-build custom components to create pipeline train and deploy model ML.
+
+## Azure ML Python SDK v2
+Authenticate to the workspace by using the Azure Machine Learning Python SDK v2 in Azure ML Notebooks setup lists:
+"subscription_id": "<SUBSCRIPTION_ID>",
+"resource_group": "<RESOURCE_GROUP>",
+"workspace_name": "<AZUREML_WORKSPACE_NAME>",
